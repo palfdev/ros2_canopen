@@ -55,7 +55,9 @@ def generate_launch_description():
         name="device_container_node",
         namespace="", 
         package="canopen_core", 
+        prefix=["gdbserver localhost:3000"],
         output="screen", 
+        emulate_tty=True,
         executable="device_container_node",
         parameters=[ 
             {
